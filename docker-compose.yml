@@ -2,8 +2,8 @@ version: '2'
 
 services:
   zookeeper:
-    # image: dearmai/kafka:v3.2.1
-    build: ./docker
+    image: dearmai/kafka:v3.2.1
+#    build: ./docker
     container_name: zookeeper
     ports:
       - "2181:2181"
@@ -17,8 +17,8 @@ services:
     restart: unless-stopped
 
   kafka:
-    # image: dearmai/kafka:v3.2.1
-    build: ./docker
+    image: dearmai/kafka:v3.2.1
+#    build: ./docker
     container_name: kafka
     ports:
       - "9092:9092"
